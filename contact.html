@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Contact | Jeremy Clothing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/png" href="assets/icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Jeremy">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+</head>
+<body data-page="contact">
+  <header id="site-header"></header>
+
+  <main>
+    <section class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&w=2000&q=80')">
+      <div>
+        <p class="eyebrow fade-up d1" style="color:var(--beige)">Client Care</p>
+        <h1 class="fade-up d2">Contact Us</h1>
+        <p class="fade-up d3">Our advisors are here to help.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <p class="eyebrow">Get in Touch</p>
+          <h2>We'd Love to<br><em>Hear From You</em></h2>
+
+          <div class="contact-card">
+            <h3>Flagship Boutique</h3>
+            <p class="muted">128 Rue Saint-Honoré, 75001 Paris, France</p>
+          </div>
+          <div class="contact-card">
+            <h3>Phone</h3>
+            <p class="muted"><a href="tel:+18005550142">+1 (800) 555-0142</a></p>
+          </div>
+          <div class="contact-card">
+            <h3>Email</h3>
+            <p class="muted"><a href="mailto:clientcare@jeremyclothing.com">clientcare@jeremyclothing.com</a></p>
+          </div>
+          <div class="contact-card">
+            <h3>Opening Hours</h3>
+            <p class="muted">Monday – Saturday: 10:00 – 19:00<br>Sunday: 12:00 – 17:00</p>
+          </div>
+          <div class="contact-card">
+            <h3>Follow</h3>
+            <p class="muted">Instagram · Pinterest · TikTok: @jeremyclothing</p>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="field"><label for="name">Full Name</label><input id="name" name="name" required></div>
+            <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required></div>
+            <div class="field"><label for="phone">Phone (optional)</label><input id="phone" name="phone" type="tel"></div>
+            <div class="field">
+              <label for="topic">Subject</label>
+              <select id="topic" name="topic">
+                <option>Order Enquiry</option>
+                <option>Product Information</option>
+                <option>Personal Styling Appointment</option>
+                <option>Returns &amp; Exchanges</option>
+                <option>Press &amp; Partnerships</option>
+              </select>
+            </div>
+            <div class="field wide"><label for="message">Message</label><textarea id="message" name="message" rows="6" required></textarea></div>
+            <div class="wide"><button class="btn btn-dark full" type="submit">Send Message</button></div>
+          </form>
+          <div class="map">
+            <iframe title="Boutique location" loading="lazy"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=2.3300%2C48.8620%2C2.3420%2C48.8680&amp;layer=mapnik&amp;marker=48.8650%2C2.3360"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="faq">
+      <div class="container faq">
+        <div class="section-head"><div><p class="eyebrow">Help</p><h2>Frequently Asked</h2></div></div>
+        <details open><summary>How long does delivery take?</summary><p>Express delivery takes 2–4 business days. Orders over $250 ship free.</p></details>
+        <details><summary>What is your return policy?</summary><p>Unworn items in their original packaging can be returned within 30 days. Returns are free.</p></details>
+        <details><summary>How do I find my size?</summary><p>Each product page includes fit notes. Our advisors can also help by phone or email.</p></details>
+        <details><summary>Do you offer gift wrapping?</summary><p>Yes. Every order arrives in our signature linen box, and you can add a personal note at checkout.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

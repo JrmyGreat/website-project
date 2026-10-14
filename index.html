@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Jeremy Clothing | Modern Luxury Fashion</title>
+  <meta name="description" content="Jeremy Clothing: considered luxury fashion for Women, Men, Child, Toys and Adult collections.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/png" href="assets/icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Jeremy">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+</head>
+<body data-page="home">
+  <header id="site-header"></header>
+
+  <main>
+    <!-- HERO: put your AI-generated video at assets/video/hero.mp4.
+         Until then, an animated (Ken Burns) image is shown. -->
+    <section class="hero">
+      <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=2000&q=80')"></div>
+      <video autoplay muted loop playsinline>
+        <source src="assets/video/hero.mp4" type="video/mp4">
+      </video>
+      <div class="hero-content">
+        <p class="eyebrow fade-up d1">Autumn / Winter 2026</p>
+        <h1 class="fade-up d2">The Art of <em>Quiet</em> Luxury</h1>
+        <p class="fade-up d3">Timeless pieces in soft neutrals, made to be worn for years.</p>
+        <a href="#departments" class="btn btn-light btn-glow fade-up d4">Discover the Collection</a>
+      </div>
+      <a href="#departments" class="scroll-cue">Scroll to Explore</a>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div>
+        <span>Cashmere</span>·<span>Silk</span>·<span>Linen</span>·<span>Italian Leather</span>·<span>Organic Cotton</span>·<span>Heirloom Toys</span>·<span>Fine Fragrance</span>·
+        <span>Cashmere</span>·<span>Silk</span>·<span>Linen</span>·<span>Italian Leather</span>·<span>Organic Cotton</span>·<span>Heirloom Toys</span>·<span>Fine Fragrance</span>·
+      </div>
+    </div>
+
+    <!-- DEPARTMENTS -->
+    <section class="section" id="departments">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Departments</p>
+            <h2>Shop by Collection</h2>
+          </div>
+          <p class="muted">From tailored essentials to heirloom toys, every collection is designed in a palette of white, beige and stone.</p>
+        </div>
+        <div class="dept-grid" id="dept-grid"></div>
+      </div>
+    </section>
+
+    <!-- EDITORIAL: THE CHARCOAL EDIT -->
+    <section class="section alt">
+      <div class="container editorial">
+        <div class="editorial-visual reveal">
+          <img src="assets/img/charcoal-edit.png" alt="The Charcoal Edit: cashmere sweater, black barrel jeans, leather bucket bag and kitten-heel boots">
+          <span class="stamp">Editor's Pick</span>
+        </div>
+        <div class="editorial-text reveal">
+          <p class="eyebrow">The Charcoal Edit</p>
+          <h2>Soft Cashmere,<br><em>Sharp Lines.</em></h2>
+          <p class="lead">An oversized mock-neck in charcoal cashmere with washed black barrel jeans, a sculptural bucket bag and pointed kitten-heel boots. One tonal look you can wear all season.</p>
+          <div class="grid four" id="edit-grid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW ARRIVALS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Just Arrived</p>
+            <h2>New &amp; Most Loved</h2>
+          </div>
+          <a href="department.html?d=women" class="link-line">View All</a>
+        </div>
+        <div class="grid four" id="new-grid"></div>
+      </div>
+    </section>
+
+    <!-- AI STYLE ASSISTANT -->
+    <section class="section stylist" id="stylist">
+      <div class="container stylist-box">
+        <div class="reveal">
+          <p class="eyebrow">✦ AI Style Assistant</p>
+          <h2>Your Personal<br><em>Stylist</em></h2>
+          <p class="muted" style="margin-top:16px">Tell us the occasion and the mood, and our assistant will put together a complete look from the current collection.</p>
+          <form id="stylist-form">
+            <div class="field">
+              <label for="occasion">Occasion</label>
+              <select id="occasion" name="occasion">
+                <option value="work">Work &amp; Meetings</option>
+                <option value="weekend">Weekend &amp; Travel</option>
+                <option value="evening">Evening &amp; Dinner</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="mood">Mood</label>
+              <select id="mood" name="mood">
+                <option value="minimal">Minimal &amp; Modern</option>
+                <option value="classic">Classic &amp; Elegant</option>
+              </select>
+            </div>
+            <button class="btn btn-dark" type="submit">Curate My Look</button>
+          </form>
+        </div>
+        <div id="stylist-result" class="reveal">
+          <p class="eyebrow">Awaiting your preferences</p>
+          <p class="stylist-note muted">Your curated look will appear here.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUES -->
+    <section class="section">
+      <div class="container values">
+        <div class="value reveal">
+          <span class="value-icon" aria-hidden="true">
+            <!-- needle & thread -->
+            <svg viewBox="0 0 48 48"><path d="M36 8 14 40"/><ellipse cx="34.6" cy="11.5" rx="1.2" ry="2.6" transform="rotate(34 34.6 11.5)"/><path d="M33 12c-8 2-20 6-22 14s10 6 14 10 0 8-6 6"/></svg>
+          </span>
+          <h3>Crafted to Last</h3><p class="muted">Natural fibres, made by hand in small ateliers.</p>
+        </div>
+        <div class="value reveal">
+          <span class="value-icon" aria-hidden="true">
+            <!-- parcel -->
+            <svg viewBox="0 0 48 48"><path d="M24 6 40 14v20L24 42 8 34V14Z"/><path d="M8 14l16 8 16-8M24 22v20"/><path d="m16 10 16 8v7"/></svg>
+          </span>
+          <h3>Complimentary Delivery</h3><p class="muted">Free express shipping on orders over $250.</p>
+        </div>
+        <div class="value reveal">
+          <span class="value-icon" aria-hidden="true">
+            <!-- gift box with bow -->
+            <svg viewBox="0 0 48 48"><rect x="8" y="18" width="32" height="8"/><path d="M11 26v15h26V26M24 18v23"/><path d="M24 18c-3-6-11-9-11-4s8 4 11 4c3 0 11 1 11-4s-8-2-11 4Z"/></svg>
+          </span>
+          <h3>Gift Wrapping</h3><p class="muted">Signature linen boxes tied with a silk ribbon.</p>
+        </div>
+        <div class="value reveal">
+          <span class="value-icon" aria-hidden="true">
+            <!-- conversation -->
+            <svg viewBox="0 0 48 48"><path d="M8 12h22v15H17l-6 5v-5H8Z"/><path d="M30 19h10v14h-3v5l-6-5H20v-6"/><path d="M14 18h10M14 22h6"/></svg>
+          </span>
+          <h3>Client Care</h3><p class="muted">Personal advisors, Monday to Saturday.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="section newsletter video-bg">
+      <video autoplay muted loop playsinline aria-hidden="true">
+        <source src="assets/video/shopping-bags.mp4" type="video/mp4">
+      </video>
+      <div class="container reveal">
+        <p class="eyebrow">The Journal</p>
+        <h2>Join <em>Jeremy</em></h2>
+        <p class="muted" style="margin-top:12px">Get early access to new collections, private sales and style notes.</p>
+        <form onsubmit="event.preventDefault(); this.innerHTML='<p>Thank you for subscribing.</p>'">
+          <input type="email" placeholder="Your email address" required aria-label="Email address">
+          <button class="btn btn-dark" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
